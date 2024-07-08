@@ -1,7 +1,13 @@
-import Image from "next/image";
+import { Navbar, Category, Footer } from "@/components";
+
+
 
 export default function Home() {
   return (
-    <main><h1>hello</h1></main>
+    <main>
+      <Navbar />
+      <Category />
+      <Footer />
+    </main>
   );
 }
