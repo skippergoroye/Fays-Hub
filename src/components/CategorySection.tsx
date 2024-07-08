@@ -1,5 +1,5 @@
 import React from "react";
-import { Category, Price, Brand, Arrival, Cloth, P } from "@/constants";
+import { Category, Price, Brand, Arrival, Cloth, } from "@/constants";
 import Image from "next/image";
 import { X } from "lucide-react";
 
