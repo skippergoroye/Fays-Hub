@@ -1,6 +1,7 @@
 import React from "react";
-import { Category, Price, Brand } from "@/constants";
+import { Category, Price, Brand, Arrival, Cloth, P } from "@/constants";
 import Image from "next/image";
+import { X } from "lucide-react";
 
 export default function CategorySection() {
   return (
@@ -10,7 +11,7 @@ export default function CategorySection() {
           Fashion Category
         </h1>
         <div className="flex flex-col lg:flex-row">
-          <div className="mt-10 w-1/4">
+          <div className="mt-20 w-1/4">
             <div className="mb-10">
               <h1 className="text-black font-opensans font-semibold capitalize">
                 Category
@@ -71,12 +72,73 @@ export default function CategorySection() {
                 Ratings
               </h1>
               <div>
-                <Image src="/svg/rating.svg" alt="ratings" width={100} height={20} className="mt-4" />
+                <Image
+                  src="/svg/rating.svg"
+                  alt="ratings"
+                  width={100}
+                  height={20}
+                  className="mt-4"
+                />
               </div>
             </div>
           </div>
-          <div className="mt-10">
-            <h1>item data</h1>
+          <div className="lg:mt-2 mt-10">
+            <div className="flex flex-wrap">
+              <div className="flex flex-1 flex-wrap gap-4 w-full lg:w-auto">
+                {Arrival.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex gap-2 items-center justify-center border p-2 rounded-lg font-opensans text-[#767676] w-full sm:w-auto"
+                  >
+                    {item.category}
+                    <X color="#374957" />
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex items-center gap-3 mt-4 lg:mt-0 lg:ml-[240px] w-full lg:w-auto">
+                <p>Sort by</p>
+                <div className="flex gap-2 border p-2 rounded-lg">
+                  Relevance <X color="#374957" />
+                </div>
+              </div>
+            </div>
+            <div className="mt-8">
+              <div className="gap-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
+                {Cloth.map((item, index) => (
+                  <div
+                    key={item.id}
+                    className="mt-2 flex flex-col gap-3 border border-[#D9D9D9] p-3 rounded-lg"
+                  >
+                    <Image
+                      src={item.imgIcon}
+                      alt="card-image"
+                      width={200}
+                      height={200}
+                    />
+                    <div className="flex  flex-col gap-2">
+                      <p>{item.title}</p>
+                      <p>{item.price}</p>
+                      <Image
+                        src={item.ratingIcon}
+                        alt="rating-icon"
+                        width={100}
+                        height={100}
+                      />
+                      <button className="flex bg-[#536EFD] text-white items-center justify-center p-2 rounded-lg w-40">
+                        <Image
+                          src={item.cartIcon}
+                          alt="card-image"
+                          width={20}
+                          height={20}
+                        />
+                        <p>{item.cart}</p>
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,3 @@
-
-
 export const MenuList = [
   {
     id: "1",
@@ -18,6 +16,9 @@ export const MenuList = [
     category: "Contact Us",
   },
 ];
+
+
+
 
 export const Category = [
   {
@@ -109,3 +110,106 @@ export const Brand = [
     category: "Louis Vitton",
   },
 ];
+
+
+
+export const Arrival = [
+  {
+    id: "1",
+    category: "Newest Arrivals",
+  },
+  {
+    id: "2",
+    category: "Relevance",
+  },
+  {
+    id: "3",
+    category: "Price: Low to high",
+  },
+];
+
+
+export const Cloth = [
+  {
+    id: "1",
+    imgIcon: "/svg/flare.svg",
+    title: "Blue Flare Dress",
+    price: "$100.00",
+    ratingIcon: "/svg/cloth-rating.svg",
+    cart: "Add to Cart",
+    cartIcon: "/svg/cartIcon.svg"
+  },
+  {
+    id: "2",
+    imgIcon: "/svg/tank.svg",
+    title: "Grey tank top",
+    price: "$124.00",
+    ratingIcon: "/svg/cloth-rating.svg",
+    cart: "Add to Cart",
+    cartIcon: "/svg/cartIcon.svg"
+  },
+  {
+    id: "3",
+    imgIcon: "/svg/black.svg",
+    title: "Black sweatshirt",
+    price: "$160.00",
+    ratingIcon: "/svg/cloth-rating.svg",
+    cart: "Add to Cart",
+    cartIcon: "/svg/cartIcon.svg"
+  },
+  {
+    id: "4",
+    imgIcon: "/svg/top.svg",
+    title: "Ruched top",
+    price: "$108.00",
+    ratingIcon: "/svg/cloth-rating.svg",
+    cart: "Add to Cart",
+    cartIcon: "/svg/cartIcon.svg"
+  },
+  {
+    id: "5",
+    imgIcon: "/svg/dress.svg",
+    title: "Floral Dress",
+    price: "$102.00",
+    ratingIcon: "/svg/cloth-rating.svg",
+    cart: "Add to Cart",
+    cartIcon: "/svg/cartIcon.svg"
+  },
+  {
+    id: "6",
+    imgIcon: '/svg/pattern.svg',
+    title: "Black and brown pattern top",
+    price: "$110.00",
+    ratingIcon: "/svg/cloth-rating.svg",
+    cart: "Add to Cart",
+    cartIcon: "/svg/cartIcon.svg"
+  },
+  {
+    id: "7",
+    imgIcon: "/svg/trouser.svg",
+    title: "Brown pant trouser",
+    price: "$190.00",
+    ratingIcon: "/svg/cloth-rating.svg",
+    cart: "Add to Cart",
+    cartIcon: "/svg/cartIcon.svg"
+  },
+  {
+    id: "8",
+    imgIcon: "/svg/sleeve.svg",
+    title: "Ruffle long sleeve top",
+    price: "$200.00",
+    ratingIcon: "/svg/cloth-rating.svg",
+    cart: "Add to Cart",
+    cartIcon: "/svg/cartIcon.svg"
+  },
+  {
+    id: "9",
+    imgIcon: "/svg/sweatshirt.svg",
+    title: "Multicoloured sweatshirt",
+    price: "$185.00",
+    ratingIcon: "/svg/cloth-rating.svg",
+    cart: "Add to Cart",
+    cartIcon: "/svg/cartIcon.svg"
+  },
+];
+
