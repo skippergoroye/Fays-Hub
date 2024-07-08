@@ -29,7 +29,7 @@ export default function Navbar() {
             <ul className="flex gap-8">
               
               {Category.map((item, index) => (
-                <li className="capitalize font-opensans font-light text-black text-[20px]">
+                <li key={index} className="capitalize font-opensans font-light text-black text-[18px]">
                   {item.category}
                 </li>
               ))}
