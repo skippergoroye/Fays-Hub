@@ -2,6 +2,11 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <div>Footer</div>
+    
+    <section className='px-6 lg:px-16 py-12 lg:py-24'>
+      <div>
+        <h1>Footer</h1>
+      </div>
+    </section>
   )
 }

@@ -1,4 +1,4 @@
-import { Navbar, Category, Footer } from "@/components";
+import { Navbar, CategorySection, Footer } from "@/components";
 
 
 
@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <Category />
+      <CategorySection />
       <Footer />
     </main>
   );

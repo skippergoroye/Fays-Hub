@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import Category from "./Category";
+import CategorySection from "./CategorySection";
 import Footer from "../components/Footer";
 
 
@@ -10,6 +10,6 @@ import Footer from "../components/Footer";
 
 export {
     Navbar,
-    Category,
+    CategorySection,
     Footer
 }
