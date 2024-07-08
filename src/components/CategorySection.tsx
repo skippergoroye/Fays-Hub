@@ -125,7 +125,7 @@ export default function CategorySection() {
                         width={100}
                         height={100}
                       />
-                      <button className="flex bg-[#536EFD] text-white items-center justify-center p-2 rounded-lg w-40">
+                      <button className="flex bg-[#536EFD] text-white items-center justify-center p-2 rounded-lg w-30 lg:w-40">
                         <Image
                           src={item.cartIcon}
                           alt="card-image"
