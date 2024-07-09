@@ -10,7 +10,7 @@ export default function PayNow() {
     <section className="flex justify-center items-center min-h-screen">
       <div>
         <div className="mb-4">
-          <p onClick={() => router.push("/")} className="text-center">Back To Home</p>
+          <p onClick={() => router.push("/")} className="text-center cursor-pointer">Back To Home</p>
         </div>
         <div className="p-4 sm:p-6 w-full sm:w-[600px] h-auto sm:h-[400px] bg-gray-100 border gap-4 sm:gap-10 flex flex-col items-center justify-center rounded-lg shadow-2xl">
           <Image
