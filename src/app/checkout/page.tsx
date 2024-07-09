@@ -59,7 +59,6 @@ export default function Checkout() {
           </div>
         )}
       </div>
-      {/* Implement additional checkout form and functionality here */}
     </div>
   )
 }

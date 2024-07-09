@@ -40,14 +40,17 @@ export default function Navbar() {
             <Search className="absolute top-1/2 right-2 transform -translate-y-1/2 text-gray-500 w-4" />
           </div>
           <div>
-            <ul className="flex gap-8">
+            <ul className="flex gap-8 cursor-pointer">
               {MenuList.map((item, index) => (
+                <Link href={item.link}>
                 <li
                   key={index}
                   className="capitalize font-opensans font-light text-black text-[18px]"
                 >
                   {item.category}
                 </li>
+                </Link>
+                
               ))}
             </ul>
           </div>

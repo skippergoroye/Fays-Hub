@@ -2,18 +2,22 @@ export const MenuList = [
   {
     id: "1",
     category: "home",
+    link: "/",
   },
   {
     id: "2",
     category: "Categories",
+    link: "/",
   },
   {
     id: "3",
     category: "Sales",
+    link: "/",
   },
   {
     id: "4",
     category: "Contact Us",
+    link: "/",
   },
 ];
 
