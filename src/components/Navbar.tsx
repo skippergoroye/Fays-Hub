@@ -42,7 +42,7 @@ export default function Navbar() {
           <div>
             <ul className="flex gap-8 cursor-pointer">
               {MenuList.map((item, index) => (
-                <Link href={item.link}>
+                <Link href={item.link} key={index}>
                 <li
                   key={index}
                   className="capitalize font-opensans font-light text-black text-[18px]"
