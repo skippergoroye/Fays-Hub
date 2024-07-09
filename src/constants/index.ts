@@ -213,3 +213,28 @@ export const Cloth = [
   },
 ];
 
+
+
+export const footerLinks = [
+  {
+    title: "Quick Links",
+    links: [
+      { name: "About Us", link: "/" },
+      { name: "FAQs", link: "/" },
+      { name: "Customer Care", link: "/" },
+    ],
+  },
+  {
+    title: "Legal Information",
+    links: [
+      { name: "Terms of Service", link: "/" },
+      { name: "Privacy Policy", link: "/" },
+      { name: "Cookie Policy", link: "/" },
+    ],
+  },
+];
+
+
+
+
+

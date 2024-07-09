@@ -97,8 +97,8 @@ export default function CategorySection() {
               </div>
 
               <div className="flex items-center gap-3 mt-4 lg:mt-0 lg:ml-[240px] w-full lg:w-auto">
-                <p>Sort by</p>
-                <div className="flex gap-2 border p-2 rounded-lg">
+                <p className="font-opensans text-[#767676]">Sort by</p>
+                <div className="flex gap-2 border p-2 rounded-lg font-opensans text-[#767676]">
                   Relevance <X color="#374957" />
                 </div>
               </div>
