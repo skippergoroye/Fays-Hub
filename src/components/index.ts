@@ -12,5 +12,6 @@ import Footer from "./Footer";
 export {
     Navbar,
     CategorySection,
-    Footer
+    Footer,
+
 }
