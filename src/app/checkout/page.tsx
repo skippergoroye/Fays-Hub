@@ -53,7 +53,7 @@ export default function Checkout() {
               onClick={handlePlaceOrder}
               className="mt-6 bg-blue-500 text-white py-2 px-4 rounded-lg"
             >
-              Place Order
+              Pay Now
             </button>
            
           </div>
