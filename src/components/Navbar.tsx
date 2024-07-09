@@ -1,11 +1,16 @@
-"use client"
+"use client";
+
 import React, { useState } from "react";
 import Image from "next/image";
-import { Search, Heart, ShoppingCart, Menu, X } from "lucide-react"; 
-import { MenuList } from "@/constants";
+import { Search, Heart, ShoppingCart, Menu, X } from "lucide-react";
+import { useAppSelector } from "../redux/app/hooks";
+import Link from "next/link";
+import { RootState } from "../redux/app/store";
+import { MenuList } from "../constants";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const cartItems = useAppSelector((state: RootState) => state.cart.items);
 
   return (
     <section className="px-6 lg:px-16 py-8">
@@ -37,7 +42,10 @@ export default function Navbar() {
           <div>
             <ul className="flex gap-8">
               {MenuList.map((item, index) => (
-                <li key={index} className="capitalize font-opensans font-light text-black text-[18px]">
+                <li
+                  key={index}
+                  className="capitalize font-opensans font-light text-black text-[18px]"
+                >
                   {item.category}
                 </li>
               ))}
@@ -45,8 +53,23 @@ export default function Navbar() {
           </div>
           <div className="mt-2 flex gap-6">
             <Heart size="20" />
-            <ShoppingCart size="20" /> 
-            <Image src="/svg/header-icon.svg" alt="header-icon" width={40} height={20} className="-mt-3" />
+            <Link href="/cart">
+              <div className="relative cursor-pointer">
+                <ShoppingCart size="20" />
+                {cartItems.length > 0 && (
+                  <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full transform translate-x-1/2 -translate-y-1/2">
+                    {cartItems.length}
+                  </span>
+                )}
+              </div>
+            </Link>
+            <Image
+              src="/svg/header-icon.svg"
+              alt="header-icon"
+              width={40}
+              height={20}
+              className="-mt-3"
+            />
           </div>
         </div>
       </div>
@@ -63,25 +86,36 @@ export default function Navbar() {
           </div>
           <ul className="flex flex-col gap-4">
             {MenuList.map((item, index) => (
-              <li key={index} className="capitalize font-opensans font-light text-black text-[18px]">
+              <li
+                key={index}
+                className="capitalize font-opensans font-light text-black text-[18px]"
+              >
                 {item.category}
               </li>
             ))}
           </ul>
           <div className="mt-4 flex gap-6 justify-center">
             <Heart size="20" />
-            <ShoppingCart size="20" /> 
-            <Image src="/svg/header-icon.svg" alt="header-icon" width={40} height={20} />
+            <Link href="/cart">
+              <div className="relative cursor-pointer">
+                <ShoppingCart size="20" />
+                {cartItems.length > 0 && (
+                  <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full transform translate-x-1/2 -translate-y-1/2">
+                    {cartItems.length}
+                  </span>
+                )}
+              </div>
+            </Link>
+
+            <Image
+              src="/svg/header-icon.svg"
+              alt="header-icon"
+              width={40}
+              height={20}
+            />
           </div>
         </div>
       )}
     </section>
   );
 }
-
-
-
-
-
-
-

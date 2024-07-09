@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="px-6 lg:px-16 py-10 bg-[#0029FF]">
+    <footer className="px-6 lg:px-16 py-12 bg-[#0029FF]">
       <div className="flex justify-between items-start gap-20 flex-wrap  max-lg:flex-col">
         <div className="flex items-start">
           <Link href="/">

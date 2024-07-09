@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import CategorySection from "./CategorySection";
-import Footer from "../components/Footer";
+import Footer from "./Footer";
 
 
 

@@ -1,9 +1,19 @@
+"use client";
+
 import React from "react";
-import { Category, Price, Brand, Arrival, Cloth, } from "@/constants";
+import { Category, Price, Brand, Arrival, Cloth } from "@/constants";
 import Image from "next/image";
 import { X } from "lucide-react";
+import { useAppSelector, useAppDispatch } from "../redux/app/hooks";
+import { addToCart } from "../redux/features/cart/cartSlice";
 
 export default function CategorySection() {
+  const dispatch = useAppDispatch();
+
+  const handleAddToCart = (item: any) => {
+    dispatch(addToCart(item));
+  };
+
   return (
     <section className="px-6 lg:px-16 py-2 lg:py-8">
       <div>
@@ -105,7 +115,7 @@ export default function CategorySection() {
             </div>
             <div className="mt-8">
               <div className="gap-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
-                {Cloth.map((item, index) => (
+                {Cloth.map((item) => (
                   <div
                     key={item.id}
                     className="mt-2 flex flex-col gap-3 border border-[#D9D9D9] p-3 rounded-lg"
@@ -116,7 +126,7 @@ export default function CategorySection() {
                       width={200}
                       height={200}
                     />
-                    <div className="flex  flex-col gap-2">
+                    <div className="flex flex-col gap-2">
                       <p>{item.title}</p>
                       <p>{item.price}</p>
                       <Image
@@ -125,14 +135,17 @@ export default function CategorySection() {
                         width={100}
                         height={100}
                       />
-                      <button className="flex bg-[#536EFD] text-white items-center justify-center p-2 rounded-lg w-30 lg:w-40">
+                      <button
+                        className="flex bg-[#536EFD] text-white items-center justify-center p-2 rounded-lg w-30 lg:w-40"
+                        onClick={() => handleAddToCart(item)}
+                      >
                         <Image
                           src={item.cartIcon}
                           alt="card-image"
                           width={20}
                           height={20}
                         />
-                        <p>{item.cart}</p>
+                        <p>{item.addtocart}</p>
                       </button>
                     </div>
                   </div>

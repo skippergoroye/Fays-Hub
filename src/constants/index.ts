@@ -136,7 +136,7 @@ export const Cloth = [
     title: "Blue Flare Dress",
     price: "$100.00",
     ratingIcon: "/svg/cloth-rating.svg",
-    cart: "Add to Cart",
+    addtocart: "Add to Cart",
     cartIcon: "/svg/cartIcon.svg"
   },
   {
@@ -145,7 +145,7 @@ export const Cloth = [
     title: "Grey tank top",
     price: "$124.00",
     ratingIcon: "/svg/cloth-rating.svg",
-    cart: "Add to Cart",
+    addtocart: "Add to Cart",
     cartIcon: "/svg/cartIcon.svg"
   },
   {
@@ -154,7 +154,7 @@ export const Cloth = [
     title: "Black sweatshirt",
     price: "$160.00",
     ratingIcon: "/svg/cloth-rating.svg",
-    cart: "Add to Cart",
+    addtocart: "Add to Cart",
     cartIcon: "/svg/cartIcon.svg"
   },
   {
@@ -163,7 +163,7 @@ export const Cloth = [
     title: "Ruched top",
     price: "$108.00",
     ratingIcon: "/svg/cloth-rating.svg",
-    cart: "Add to Cart",
+    addtocart: "Add to Cart",
     cartIcon: "/svg/cartIcon.svg"
   },
   {
@@ -172,7 +172,7 @@ export const Cloth = [
     title: "Floral Dress",
     price: "$102.00",
     ratingIcon: "/svg/cloth-rating.svg",
-    cart: "Add to Cart",
+    addtocart: "Add to Cart",
     cartIcon: "/svg/cartIcon.svg"
   },
   {
@@ -181,7 +181,7 @@ export const Cloth = [
     title: "Black and brown pattern top",
     price: "$110.00",
     ratingIcon: "/svg/cloth-rating.svg",
-    cart: "Add to Cart",
+    addtocart: "Add to Cart",
     cartIcon: "/svg/cartIcon.svg"
   },
   {
@@ -190,7 +190,7 @@ export const Cloth = [
     title: "Brown pant trouser",
     price: "$190.00",
     ratingIcon: "/svg/cloth-rating.svg",
-    cart: "Add to Cart",
+    addtocart: "Add to Cart",
     cartIcon: "/svg/cartIcon.svg"
   },
   {
@@ -199,7 +199,7 @@ export const Cloth = [
     title: "Ruffle long sleeve top",
     price: "$200.00",
     ratingIcon: "/svg/cloth-rating.svg",
-    cart: "Add to Cart",
+    addtocart: "Add to Cart",
     cartIcon: "/svg/cartIcon.svg"
   },
   {
@@ -208,7 +208,7 @@ export const Cloth = [
     title: "Multicoloured sweatshirt",
     price: "$185.00",
     ratingIcon: "/svg/cloth-rating.svg",
-    cart: "Add to Cart",
+    addtocart: "Add to Cart",
     cartIcon: "/svg/cartIcon.svg"
   },
 ];
