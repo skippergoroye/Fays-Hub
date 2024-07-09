@@ -52,7 +52,7 @@ const CartPage = () => {
               </div>
             ))}
             <Link href="/checkout">
-              <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Proceed to Checkout</button>
+              <button className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-800 text-white rounded">Proceed to Checkout</button>
             </Link>
           </div>
         )}

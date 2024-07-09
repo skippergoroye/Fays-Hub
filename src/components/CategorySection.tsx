@@ -136,7 +136,7 @@ export default function CategorySection() {
                         height={100}
                       />
                       <button
-                        className="flex bg-[#536EFD] text-white items-center justify-center p-2 rounded-lg w-30 lg:w-40"
+                        className="flex bg-[#536EFD] hover:bg-blue-800 text-white items-center justify-center p-2 rounded-lg w-30 lg:w-40 transition-all duration-500"
                         onClick={() => handleAddToCart(item)}
                       >
                         <Image
